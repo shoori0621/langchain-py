@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # コンテナ起動時に実行するコマンド
-CMD ["python", "app.py"]
+CMD ["bash"]

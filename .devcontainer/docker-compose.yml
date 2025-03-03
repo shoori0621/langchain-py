@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ..:/app:cached
+    env_file:
+      - ../.env
+    command: sleep infinity
