@@ -16,7 +16,10 @@
                 "source.organizeImports": "explicit"
             },
             "editor.defaultFormatter": "charliermarsh.ruff"
-        }
+        },
+        "python.linting.enabled": true,
+        "python.linting.ruffEnabled": true,
+        "python.formatting.provider": "none"  // Blackなど他のフォーマッターを無効化
       },
       "extensions": [
         "ms-python.python",
@@ -25,5 +28,5 @@
       ]
     }
   },
-  "postCreateCommand": "pip install --upgrade pip"
+  "postCreateCommand": "pip install --upgrade pip && pip install ruff"
 }

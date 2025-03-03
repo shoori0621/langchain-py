@@ -1,0 +1,12 @@
+[tool.ruff]
+line-length = 88  # コードの最大行長
+indent-width = 2  # インデントを2スペースに設定
+target-version = "py310"  # 使用するPythonのバージョン（例: 3.10）
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "C90"]  # Linterルールを指定
+ignore = ["E501"]  # 長すぎる行の警告を無視
+
+[tool.ruff.format]
+quote-style = "single"  # シングルクォーテーションを使用
+indent-style = "space"  # インデントはスペースを使用
