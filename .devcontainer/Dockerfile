@@ -1,5 +1,5 @@
-# Python公式の軽量イメージをベースに使用
-FROM python:3.13-slim
+# Microtsft公式のPythonイメージを利用する
+FROM mcr.microsoft.com/vscode/devcontainers/python:3
 
 # 作業ディレクトリを設定
 WORKDIR /app
